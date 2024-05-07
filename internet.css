@@ -1,0 +1,134 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+#imgg{
+
+    border-top-left-radius: 183px 150%;
+    border-top-right-radius: 201px 147%;
+    border-bottom-left-radius:183px 150%;
+    border-bottom-right-radius:183px 150%;
+    
+}
+header{
+height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(213, 145, 205,0.7),rgba(213, 145, 205,0.7)),url(donute.jpg);
+background-position: center;
+
+position: relative;
+}
+nav{
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navs{
+
+    flex:1;
+    text-align: right;
+}
+.navs ul li {
+
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navs ul li a {
+text-decoration: none;
+color: rgb(2, 2, 2);
+font-size: 15px;
+
+}
+.navs ul li ::after{
+content: '';
+width: 0%;
+height: 2px;
+background: rgb(99, 66, 161);
+display: block;
+margin: auto;
+transition: 1s;
+
+}
+.navs ul li:hover ::after{
+    width: 100%;  
+}
+
+.maintext{
+width: 90%;
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.maintext h1{
+font-size: 60px;
+
+}
+.maintext p {
+margin :10px  0px 30px;
+font-size: 15px;
+color: rgb(2, 1, 11);
+}
+.btn {
+
+    text-decoration: none;
+    width: 130px;
+    display: inline-block;
+    border: 2px solid purple;
+font-size: 16px;
+cursor: pointer;
+padding: 12px;
+
+}
+.btn:hover{
+    color:rgb(101, 63, 205);
+    background-color: blanchedalmond;
+    border: 3px solid goldenrod;
+    transition: 1s;
+}
+nav .fas{
+    display: none;
+}
+@media(max-width:700px) {
+    .maintext h1 {
+font-size: 20px;
+    }
+    .nav ul li { display: block;}
+    .navs{
+position: absolute;
+background: darkcyan;
+top: 0;
+right: -200px;
+height: 100vh;
+width: 200px;
+text-align: left;
+z-index: 2;
+transition: 1s;
+
+    }
+    .nav ul {
+        padding: 40px;
+    }
+    nav .fas{
+        display: block;
+        color: azure;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+    
+    
+    
+    
+    }
+    
+}
+

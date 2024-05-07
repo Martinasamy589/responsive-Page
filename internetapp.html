@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>donuts site</title>
+    <link rel="stylesheet" href="internet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href =""> <img src="donte.jpg" width="150 px" height="100px" id="imgg"> </a>
+            <div class="navs" id="navlinks">
+              
+                <i class="fas fa-times"onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="# ">home</a></li>
+                    <li><a href="# ">product</a></li>
+                    <li><a href=" #">about us</a></li>
+                    <li><a href=" #">services</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="maintext">
+            <h1> welcome in my page </h1>
+            <p> in this page you can see any type of donuts</p>
+            <a href="#" class="btn"> click here</a>
+
+        </div>
+    </header>
+    <script>
+        var navlink=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+
+        }
+        function HideMenu(){
+            navlinks.style.right="-200px";
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+
